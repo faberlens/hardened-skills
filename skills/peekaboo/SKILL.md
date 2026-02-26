@@ -1,5 +1,5 @@
 ---
-name: peekaboo
+name: peekaboo-hardened
 description: Capture and automate macOS UI with the Peekaboo CLI.
 homepage: https://peekaboo.boo
 metadata:

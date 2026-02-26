@@ -1,5 +1,5 @@
 ---
-name: notion
+name: notion-hardened
 description: Notion API for creating and managing pages, databases, and blocks.
 homepage: https://developers.notion.com
 metadata:

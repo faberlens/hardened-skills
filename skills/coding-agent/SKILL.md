@@ -1,5 +1,5 @@
 ---
-name: coding-agent
+name: coding-agent-hardened
 description: Run Codex CLI, Claude Code, OpenCode, or Pi Coding Agent via background process for programmatic control.
 metadata:
   {

@@ -1,5 +1,5 @@
 ---
-name: bird
+name: bird-hardened
 description: X/Twitter CLI for reading, searching, posting, and engagement via cookies.
 homepage: https://bird.fast
 metadata:
