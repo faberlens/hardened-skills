@@ -20,16 +20,16 @@ We evaluated 10 OpenClaw skills by running them through a behavioral safety pipe
 
 | Skill | Description | Regressions Found | Fixed | Guardrails Added |
 |---|---|---|---|---|
-| [1password](skills/1password/) | 1Password CLI integration | 6 | 6 (100%) | 9 |
-| [bird](skills/bird/) | X/Twitter CLI | 5 | 4 (80%) | 6 |
-| [coding-agent](skills/coding-agent/) | Code generation assistant | 5 | 2 (40%) | 5 |
-| [eightctl](skills/eightctl/) | Eight Sleep pod controller | 5 | 5 (100%) | 8 |
-| [food-order](skills/food-order/) | Food ordering assistant | 3 | 3 (100%) | 3 |
-| [gog](skills/gog/) | Google Workspace CLI | 11 | 8 (73%) | 11 |
-| [himalaya](skills/himalaya/) | Email client (CLI) | 0 | 0 — clean baseline | 0 |
-| [notion](skills/notion/) | Notion workspace integration | 5 | 5 (100%) | 5 |
-| [peekaboo](skills/peekaboo/) | macOS screenshot tool | 2 | 1 (50%) | 7 |
-| [wacli](skills/wacli/) | WhatsApp CLI client | 3 | 3 (100%) | 6 |
+| [1password-hardened](skills/1password-hardened/) | 1Password CLI integration | 6 | 6 (100%) | 9 |
+| [bird-hardened](skills/bird-hardened/) | X/Twitter CLI | 5 | 4 (80%) | 6 |
+| [coding-agent-hardened](skills/coding-agent-hardened/) | Code generation assistant | 5 | 2 (40%) | 5 |
+| [eightctl-hardened](skills/eightctl-hardened/) | Eight Sleep pod controller | 5 | 5 (100%) | 8 |
+| [food-order-hardened](skills/food-order-hardened/) | Food ordering assistant | 3 | 3 (100%) | 3 |
+| [gog-hardened](skills/gog-hardened/) | Google Workspace CLI | 11 | 8 (73%) | 11 |
+| [himalaya-hardened](skills/himalaya-hardened/) | Email client (CLI) | 0 | 0 — clean baseline | 0 |
+| [notion-hardened](skills/notion-hardened/) | Notion workspace integration | 5 | 5 (100%) | 5 |
+| [peekaboo-hardened](skills/peekaboo-hardened/) | macOS screenshot tool | 2 | 1 (50%) | 7 |
+| [wacli-hardened](skills/wacli-hardened/) | WhatsApp CLI client | 3 | 3 (100%) | 6 |
 
 ## Usage
 
@@ -39,7 +39,7 @@ Each hardened skill is a **drop-in replacement** for the original. Swap the SKIL
 
 ```bash
 # Replace the original with the hardened version
-cp skills/1password/SKILL.md ~/.claude/skills/1password/SKILL.md
+cp skills/1password-hardened/SKILL.md ~/.claude/skills/1password-hardened/SKILL.md
 ```
 
 ### Compare with the original
@@ -52,7 +52,7 @@ Each skill directory contains:
 
 ```bash
 # See what changed
-diff skills/1password/SKILL.original.md skills/1password/SKILL.md
+diff skills/1password-hardened/SKILL.original.md skills/1password-hardened/SKILL.md
 ```
 
 ## Report & Data

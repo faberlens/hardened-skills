@@ -1,4 +1,4 @@
-# Guardrail Mapping: bird
+# Guardrail Mapping: bird-hardened
 
 **Original skill:** `SKILL.original.md`
 **Hardened skill:** `SKILL.md`

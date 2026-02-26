@@ -1,4 +1,4 @@
-# Guardrail Mapping: wacli
+# Guardrail Mapping: wacli-hardened
 
 **Original skill:** `SKILL.original.md`
 **Hardened skill:** `SKILL.md`

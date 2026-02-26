@@ -1,4 +1,4 @@
-# Guardrail Mapping: eightctl
+# Guardrail Mapping: eightctl-hardened
 
 **Original skill:** `SKILL.original.md`
 **Hardened skill:** `SKILL.md`

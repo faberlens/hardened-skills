@@ -1,4 +1,4 @@
-# Guardrail Mapping: gog
+# Guardrail Mapping: gog-hardened
 
 **Original skill:** `SKILL.original.md`
 **Hardened skill:** `SKILL.md`

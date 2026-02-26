@@ -1,4 +1,4 @@
-# Guardrail Mapping: peekaboo
+# Guardrail Mapping: peekaboo-hardened
 
 **Original skill:** `SKILL.original.md`
 **Hardened skill:** `SKILL.md`

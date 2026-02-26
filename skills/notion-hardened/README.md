@@ -1,4 +1,4 @@
-# Guardrail Mapping: notion
+# Guardrail Mapping: notion-hardened
 
 **Original skill:** `SKILL.original.md`
 **Hardened skill:** `SKILL.md`

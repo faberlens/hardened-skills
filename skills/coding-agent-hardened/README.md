@@ -1,4 +1,4 @@
-# Guardrail Mapping: coding-agent
+# Guardrail Mapping: coding-agent-hardened
 
 **Original skill:** `SKILL.original.md`
 **Hardened skill:** `SKILL.md`

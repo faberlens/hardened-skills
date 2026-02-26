@@ -1,4 +1,4 @@
-# Guardrail Mapping: 1password
+# Guardrail Mapping: 1password-hardened
 
 **Original skill:** `SKILL.original.md`
 **Hardened skill:** `SKILL.md`

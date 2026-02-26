@@ -1,4 +1,4 @@
-# Guardrail Mapping: food-order
+# Guardrail Mapping: food-order-hardened
 
 **Original skill:** `SKILL.original.md`
 **Hardened skill:** `SKILL.md`
