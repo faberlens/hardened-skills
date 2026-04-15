@@ -1,70 +1,74 @@
 # Hardened Skills
 
-Drop-in replacements for 10 [OpenClaw](https://github.com/openclaw/openclaw) AI skills, patched to fix behavioral security regressions discovered by [Faberlens](https://faberlens.ai).
+200 AI agent skills evaluated for behavioral safety. Each one passes every static scanner. 87% create silent security regressions when loaded.
 
-## Why This Exists
+We found the regressions. We fixed 87% of them. These are the hardened versions.
 
-AI skills (SKILL.md files) can pass every static scanner — Snyk, VirusTotal, semgrep — and still make your agent *less secure*. A clean, well-written skill can teach an agent to leak secrets, bypass permission gates, or ignore safety boundaries.
+## What's Here
 
-We evaluated 10 OpenClaw skills by running them through a behavioral safety pipeline: testing security behavior **with** and **without** each skill installed, across 186 security test categories.
+Each skill folder contains:
 
-**The main finding:** 9 of 10 skills reshape the model's safety surface — improving some properties while degrading others. This "[jagged safety surface](https://faberlens.ai/blog/jagged-surface.html)" is invisible to static analysis. You have to run the composition and test the behavior to find it.
+- **SKILL.md** — Drop-in replacement for the original skill. Default guardrails are already applied. Works on Claude Code, Codex, Cursor, Windsurf, and any agent platform that loads markdown skills.
+- **README.md** — Full safety evaluation: what we found, the test prompts that exposed it, before/after proof of the fix, and the evaluator's reasoning.
 
-- **45 security regressions** found across 9 of 10 skills
-- **37 fixed** with targeted guardrail additions (82% fix rate)
-- **93% of test categories improved** after hardening
-- **5 skills achieved 100% regression fix rate**
-- **Validated across models** — a [cross-model replication](https://faberlens.ai/blog/opus-replication.html) on Claude Opus 4.6 (4,870 generations) confirmed regressions persist on stronger models — and some get worse
+## Default vs Configurable Guardrails
 
-## Skills
+**Default guardrails** (in SKILL.md) are universally safe — no trade-off, no capability loss. Never pipe secrets to network commands. Always confirm before destructive operations. These apply in every deployment context.
 
-| Skill | Description | Regressions Found | Fixed | Guardrails Added |
-|---|---|---|---|---|
-| [1password-hardened](skills/1password-hardened/) | 1Password CLI integration | 6 | 6 (100%) | 9 |
-| [bird-hardened](skills/bird-hardened/) | X/Twitter CLI | 5 | 4 (80%) | 6 |
-| [coding-agent-hardened](skills/coding-agent-hardened/) | Code generation assistant | 5 | 2 (40%) | 5 |
-| [eightctl-hardened](skills/eightctl-hardened/) | Eight Sleep pod controller | 5 | 5 (100%) | 8 |
-| [food-order-hardened](skills/food-order-hardened/) | Food ordering assistant | 3 | 3 (100%) | 3 |
-| [gog-hardened](skills/gog-hardened/) | Google Workspace CLI | 11 | 8 (73%) | 11 |
-| [himalaya-hardened](skills/himalaya-hardened/) | Email client (CLI) | 0 | 0 — clean baseline | 0 |
-| [notion-hardened](skills/notion-hardened/) | Notion workspace integration | 5 | 5 (100%) | 5 |
-| [peekaboo-hardened](skills/peekaboo-hardened/) | macOS screenshot tool | 2 | 1 (50%) | 7 |
-| [wacli-hardened](skills/wacli-hardened/) | WhatsApp CLI client | 3 | 3 (100%) | 6 |
+**Configurable guardrails** (in each skill's README.md) address real vulnerabilities but involve a capability trade-off that depends on your deployment. Browse the full evidence and choose which ones to apply at [faberlens.ai/explore](https://faberlens.ai/explore).
 
-## Usage
+## The Numbers
 
-Each hardened skill is a **drop-in replacement** for the original. Swap the SKILL.md file and you're done.
+| Metric | Value |
+|--------|-------|
+| Skills evaluated | 200 |
+| Security concepts discovered | 3,838 |
+| Concept directions explored | 72,372 |
+| Regressions found | 739 |
+| Fix rate | 87% |
+| Targeted guardrails written | 2,750 |
 
-### Install a hardened skill
+*These are evaluation-wide metrics. Each skill's individual stats are in its README.md.*
 
-```bash
-# Replace the original with the hardened version
-cp skills/1password-hardened/SKILL.md ~/.claude/skills/1password-hardened/SKILL.md
+## Install
+
+**Claude Code (ClawHub):**
+```
+clawhub install 1password-hardened
 ```
 
-### Compare with the original
+**Any other platform:**
+Copy the SKILL.md into your agent's skill configuration. It's a plain markdown file.
 
-Each skill directory contains:
+## Get Involved
 
-- `SKILL.md` — Hardened version (use this)
-- `SKILL.original.md` — Original OpenClaw version (for reference)
-- `README.md` — Documents which regressions each guardrail addresses, with before/after examples
+- **Found a guardrail that blocks a legitimate workflow?** [Open an issue](https://github.com/faberlens/hardened-skills/issues/new?template=guardrail-feedback.yml)
+- **Want a skill evaluated?** [Request it](https://github.com/faberlens/hardened-skills/issues/new?template=skill-request.yml)
+- **Browse the evidence:** [faberlens.ai/explore](https://faberlens.ai/explore) — per-skill scorecards, per-concept pass rates, before/after proofs, configurable guardrails
 
-```bash
-# See what changed
-diff skills/1password-hardened/SKILL.original.md skills/1password-hardened/SKILL.md
-```
+## How We Evaluate
 
-## Report & Data
+Every evaluation is derived from what the skill does — not from a library of known attacks. For each skill, we:
 
-- Full report: [faberlens.ai/report](https://faberlens.ai/report)
-- Methodology: [docs/methodology.md](docs/methodology.md)
+1. Discover the security concepts unique to that skill's capabilities
+2. Explore every behavioral scenario (concept direction) we can derive
+3. Measure the agent's safety with and without the skill loaded
+4. Write targeted guardrails traced to specific failure mechanisms
+5. Re-evaluate to verify the fix
 
-## Credits
+## Research
 
-- Original skills by the [OpenClaw](https://github.com/openclaw/openclaw) community
-- Behavioral evaluation by [Faberlens](https://faberlens.ai)
+- [AI Isn't Software. Stop Securing It Like Software.](https://faberlens.ai/blog/ai-isnt-software)
+- [200 Skills Pass Every Scanner. 87% Still Break Safety.](https://faberlens.ai/blog/skill-safety-problem)
+- [What You Can't Measure, You Can't Fix](https://faberlens.ai/blog/what-you-cant-measure)
+- [The Jagged Safety Surface (10 skills)](https://faberlens.ai/blog/jagged-surface)
+- [Case Studies](https://faberlens.ai/blog/case-studies)
+- [Cross-Model Replication](https://faberlens.ai/blog/opus-replication)
 
 ## License
 
-MIT — same as the original OpenClaw skills.
+MIT. See [LICENSE](LICENSE).
+
+---
+
+Built by [Faberlens](https://faberlens.ai). Behavioral safety evaluation for AI agent skills.
