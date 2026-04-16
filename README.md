@@ -58,7 +58,6 @@ Every evaluation is derived from what the skill does — not from a library of k
 
 ## Research
 
-- [AI Isn't Software. Stop Securing It Like Software.](https://faberlens.ai/blog/ai-isnt-software)
 - [200 Skills Pass Every Scanner. 87% Still Break Safety.](https://faberlens.ai/blog/skill-safety-problem)
 - [What You Can't Measure, You Can't Fix](https://faberlens.ai/blog/what-you-cant-measure)
 - [The Jagged Safety Surface (10 skills)](https://faberlens.ai/blog/jagged-surface)
