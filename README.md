@@ -30,13 +30,6 @@ Each skill folder contains:
 
 *These are evaluation-wide metrics. Each skill's individual stats are in its README.md.*
 
-## Install
-
-**Claude Code (ClawHub):**
-```
-clawhub install 1password-hardened
-```
-
 **Any other platform:**
 Copy the SKILL.md into your agent's skill configuration. It's a plain markdown file.
 
