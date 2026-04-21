@@ -312,6 +312,111 @@
         "./skills/super-websearch-realtime-hardened",
         "./skills/web-scraper-hardened"
       ]
+    },
+    {
+      "name": "1password-hardened",
+      "description": "Set up and use the 1Password CLI (op): install, sign in across accounts, and read/inject/run secrets.",
+      "source": "./",
+      "strict": false,
+      "skills": ["./skills/1password-hardened"]
+    },
+    {
+      "name": "bitwarden-hardened",
+      "description": "Access and manage Bitwarden/Vaultwarden passwords securely via the rbw CLI.",
+      "source": "./",
+      "strict": false,
+      "skills": ["./skills/bitwarden-hardened"]
+    },
+    {
+      "name": "okta-hardened",
+      "description": "Okta integration for managing users and interacting with Okta data.",
+      "source": "./",
+      "strict": false,
+      "skills": ["./skills/okta-hardened"]
+    },
+    {
+      "name": "snyk-hardened",
+      "description": "Security analysis and vulnerability assessment: threat modeling, secure code review, and pre-deployment validation across app and infrastructure layers.",
+      "source": "./",
+      "strict": false,
+      "skills": ["./skills/snyk-hardened"]
+    },
+    {
+      "name": "burp-zap-hardened",
+      "description": "Query Burp Suite via MCP to extract security findings and proxy data.",
+      "source": "./",
+      "strict": false,
+      "skills": ["./skills/burp-zap-hardened"]
+    },
+    {
+      "name": "bird-hardened",
+      "description": "X/Twitter CLI for reading, searching, posting, and engagement via cookies.",
+      "source": "./",
+      "strict": false,
+      "skills": ["./skills/bird-hardened"]
+    },
+    {
+      "name": "discord-hardened",
+      "description": "Control Discord: send messages, react, manage channels/threads/pins, upload stickers and emojis, run polls, and handle moderation.",
+      "source": "./",
+      "strict": false,
+      "skills": ["./skills/discord-hardened"]
+    },
+    {
+      "name": "gog-hardened",
+      "description": "Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs.",
+      "source": "./",
+      "strict": false,
+      "skills": ["./skills/gog-hardened"]
+    },
+    {
+      "name": "alpaca-trading-hardened",
+      "description": "Trade stocks, ETFs, options, and crypto via Alpaca's Trading API using the apcacli CLI: market data, orders, positions, and portfolio management.",
+      "source": "./",
+      "strict": false,
+      "skills": ["./skills/alpaca-trading-hardened"]
+    },
+    {
+      "name": "stripe-hardened",
+      "description": "Stripe APIs via MCP: manage customers, subscriptions, invoices, products, and search Stripe documentation.",
+      "source": "./",
+      "strict": false,
+      "skills": ["./skills/stripe-hardened"]
+    },
+    {
+      "name": "confluence-hardened",
+      "description": "Search and manage Confluence pages and spaces using confluence-cli — read docs, create pages, and navigate spaces.",
+      "source": "./",
+      "strict": false,
+      "skills": ["./skills/confluence-hardened"]
+    },
+    {
+      "name": "notion-hardened",
+      "description": "Notion API for creating and managing pages, databases, and blocks.",
+      "source": "./",
+      "strict": false,
+      "skills": ["./skills/notion-hardened"]
+    },
+    {
+      "name": "garmin-hardened",
+      "description": "Sync daily health and fitness data from Garmin Connect into markdown: sleep, activity, heart rate, stress, body battery, HRV, SpO2, and weight.",
+      "source": "./",
+      "strict": false,
+      "skills": ["./skills/garmin-connect-hardened"]
+    },
+    {
+      "name": "telegram-bot-builder-hardened",
+      "description": "Build Telegram bots fast: keyboards, inline buttons, webhooks, auto-reply, and group management.",
+      "source": "./",
+      "strict": false,
+      "skills": ["./skills/telegram-bot-builder-hardened"]
+    },
+    {
+      "name": "agent-memory-hardened",
+      "description": "Persistent memory for AI agents: remember facts, learn from experience, and track entities across sessions.",
+      "source": "./",
+      "strict": false,
+      "skills": ["./skills/agent-memory-hardened"]
     }
   ]
 }
