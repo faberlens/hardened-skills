@@ -1,8 +1,7 @@
 ---
 version: "2.0.0"
-name: Database Designer-hardened
-description: "Database Design Helper - 数据库设计助手. Use when you need database design capabilities. Triggers on: database design."
-  数据库设计助手。表设计、范式化、索引策略、迁移脚本、测试数据、ER图描述。Database designer with normalization, indexing, migration, seeding, ER diagrams. 数据库、MySQL。
+name: database-design-hardened
+description: "Database design helper (数据库设计助手) — table design, normalization, indexing strategy, migration scripts, test data, and ER diagrams."
 author: BytesAgain
 homepage: https://bytesagain.com
 source: https://github.com/bytesagain/ai-skills

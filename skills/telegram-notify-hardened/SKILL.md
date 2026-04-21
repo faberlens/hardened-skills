@@ -1,3 +1,8 @@
+---
+name: telegram-notify-hardened
+description: Send consistent Telegram DM alerts for trading events (entry/exit/self-heal) with rate limits.
+---
+
 # telegram-notify
 
 ## Purpose

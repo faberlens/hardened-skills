@@ -1,5 +1,5 @@
 ---
-name: "Stripe MCP Integration"-hardened
+name: stripe-hardened
 description: "Connect Claude to Stripe APIs via Model Context Protocol. Use when managing customers, subscriptions, invoices, products, or searching Stripe documentation. Triggers: payment, billing, checkout, Stripe API, subscription management."
 ---
 

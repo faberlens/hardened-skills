@@ -1,3 +1,8 @@
+---
+name: claw-shell-hardened
+description: Run shell commands inside a dedicated tmux session named `claw` and return output.
+---
+
 # claw-shell
 
 ALWAYS USES TMUX SESSION `claw`.

@@ -1,5 +1,5 @@
 ---
-name: "Learning"-hardened
+name: learning-hardened
 description: "Auto-learns how you learn best. Adapts teaching style, format, and depth to you."
 ---
 

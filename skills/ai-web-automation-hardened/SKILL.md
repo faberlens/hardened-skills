@@ -1,3 +1,8 @@
+---
+name: ai-web-automation-hardened
+description: Automated web task execution service.
+---
+
 # SKILL.md
 
 # Web Automation Service

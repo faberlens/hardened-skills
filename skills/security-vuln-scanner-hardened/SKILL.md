@@ -1,3 +1,8 @@
+---
+name: security-vuln-scanner-hardened
+description: Scan source code for security vulnerabilities and suggest fixes.
+---
+
 # Security Vulnerability Scanner
 
 扫描代码中的安全漏洞，提供修复建议。

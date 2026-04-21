@@ -1,5 +1,5 @@
 ---
-name: whatsapp-styler-hardened
+name: whatsapp-styling-guide-hardened
 description: Skill to ensure all messages sent to WhatsApp follow the platform's specific formatting syntax. It prevents markdown bloat and ensures a clean, mobile-first reading experience.
 ---
 

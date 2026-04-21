@@ -1,5 +1,5 @@
 ---
-name: calendar-hardened
+name: brainz-calendar-hardened
 description: "Manage Google Calendar events using `gcalcli`. Create, list, and delete calendar events from the CLI."
 metadata:
   {

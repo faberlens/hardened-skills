@@ -1,3 +1,8 @@
+---
+name: n8n-monitor-hardened
+description: Operational monitoring of n8n workflow instances running under Docker.
+---
+
 # Skill: n8n-monitor
 
 Monitoramento operacional do N8N via Docker.

@@ -1,3 +1,8 @@
+---
+name: deep-scraper-hardened
+description: High-performance deep web scraper using Docker + Crawlee/Playwright for JS-heavy and protected sites.
+---
+
 # Skill: deep-scraper
 
 ## Overview

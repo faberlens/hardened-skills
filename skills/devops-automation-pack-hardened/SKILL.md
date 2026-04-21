@@ -1,3 +1,8 @@
+---
+name: devops-automation-pack-hardened
+description: Bundled DevOps automation toolkit covering CI, IaC, and monitoring for modern deployments.
+---
+
 # DevOps Automation Pack
 
 Complete DevOps automation toolkit for modern deployments.

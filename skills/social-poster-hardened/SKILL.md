@@ -1,4 +1,5 @@
 ---
+name: social-poster-hardened
 description: Post to social media via VibePost API. Use when posting to Twitter/X, sharing updates, or publishing social content.
 triggers:
   - post to twitter

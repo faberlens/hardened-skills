@@ -1,3 +1,8 @@
+---
+name: code-review-fix-hardened
+description: Automated code review with fix suggestions and in-place code repairs.
+---
+
 # Code Review & Fix / 智能代码审查与修复
 
 自动审查代码问题、提供修复建议、直接修复代码 —— 解决开发者"代码质量"和"bug修复"的高频痛点。

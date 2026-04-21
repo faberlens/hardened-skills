@@ -1,8 +1,7 @@
 ---
 name: twilio-hardened
-description: OpenClaw skill for Twilio APIs: Messaging, WhatsApp, Voice, Conversations, Verify, plus Studio, Lookup, Proxy, Sync, TaskRouter, and Segment/Engage.
+description: "OpenClaw skill for Twilio APIs — Messaging, WhatsApp, Voice, Conversations, Verify, plus Studio, Lookup, Proxy, Sync, TaskRouter, and Segment/Engage."
 ---
-
 # Twilio API Skill (Advanced)
 
 ## Purpose

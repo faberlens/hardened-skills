@@ -1,3 +1,8 @@
+---
+name: feishu-bitable-hardened
+description: Manage Feishu (Lark) Bitable multi-dimensional table records.
+---
+
 # Feishu Bitable Skill
 
 操作飞书多维表格（Bitable/Base）记录。

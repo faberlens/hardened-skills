@@ -1,3 +1,8 @@
+---
+name: agent-memory-hardened
+description: "Persistent memory system for AI agents — remember facts, learn from experience, and track entities across sessions."
+---
+
 # AgentMemory Skill
 
 Persistent memory system for AI agents. Remember facts, learn from experience, and track entities across sessions.

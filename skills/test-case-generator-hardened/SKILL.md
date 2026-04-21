@@ -1,3 +1,8 @@
+---
+name: test-case-generator-hardened
+description: Generate unit tests automatically from source code.
+---
+
 # Test Case Generator
 
 根据代码自动生成单元测试用例。

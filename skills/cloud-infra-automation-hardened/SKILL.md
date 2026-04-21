@@ -1,3 +1,8 @@
+---
+name: cloud-infra-automation-hardened
+description: Automate cloud infrastructure provisioning and management via IaC tooling.
+---
+
 # Cloud Infrastructure Automation
 
 Automate cloud infrastructure with IaC.

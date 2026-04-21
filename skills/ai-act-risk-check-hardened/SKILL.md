@@ -1,3 +1,8 @@
+---
+name: ai-act-risk-check-hardened
+description: Assess preliminary risk classification for an AI system against EU AI Act Annex III high-risk categories.
+---
+
 # SKILL.md - AI Act Risk Check
 
 ## `ai-act-risk-check`

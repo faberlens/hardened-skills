@@ -1,3 +1,8 @@
+---
+name: burp-zap-hardened
+description: Query Burp Suite via MCP to extract security findings and proxy data.
+---
+
 # SKILL: Burp MCP Query Patterns
 
 This skill defines how to effectively query Burp Suite via MCP to extract relevant security data.

@@ -1,3 +1,8 @@
+---
+name: ai-revenue-tracker-hardened
+description: Daily revenue tracking and summarization system.
+---
+
 # SKILL.md
 
 # Revenue Tracker
